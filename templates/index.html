@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Setup -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <!-- External CSS File -->
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Main Calculator Container -->
+
+    <div class="calculator">
+
+        <h1 class="main-title">Calculator</h1>
+
+        <!-- Display Screen -->
+
+        <div class="display">
+
+            <!-- Shows Current Expression -->
+
+            <div class="expression">
+                {{ expression }}
+            </div>
+
+            <!-- Shows Final Result -->
+
+            <div class="result">
+                {{ result }}
+            </div>
+
+        </div>
+
+        <!-- Calculator Buttons -->
+
+        <form method="POST">
+
+            <div class="buttons">
+
+                <!-- First Row -->
+
+                <!-- Clear All Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="AC"
+                    class="red">
+
+                    AC
+
+                </button>
+
+                <!-- Backspace Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="⌫"
+                    class="red">
+
+                    ⌫
+
+                </button>
+
+                <!-- Percentage Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="%"
+                    class="blue">
+
+                    %
+
+                </button>
+
+                <!-- Division Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="/"
+                    class="blue">
+
+                    ÷
+
+                </button>
+
+                <!-- Second Row -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="7">
+
+                    7
+
+                </button>
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="8">
+
+                    8
+
+                </button>
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="9">
+
+                    9
+
+                </button>
+
+                <!-- Multiplication Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="*"
+                    class="blue">
+
+                    ×
+
+                </button>
+
+                <!-- Third Row -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="4">
+
+                    4
+
+                </button>
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="5">
+
+                    5
+
+                </button>
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="6">
+
+                    6
+
+                </button>
+
+                <!-- Subtraction Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="-"
+                    class="blue">
+
+                    −
+
+                </button>
+
+                <!-- Fourth Row -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="1">
+
+                    1
+
+                </button>
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="2">
+
+                    2
+
+                </button>
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="3">
+
+                    3
+
+                </button>
+
+                <!-- Addition Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="+"
+                    class="blue">
+
+                    +
+
+                </button>
+
+                <!-- Fifth Row -->
+
+                <!-- Positive / Negative Toggle -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="+/-">
+
+                    +/-
+
+                </button>
+
+                <!-- Zero Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="0">
+
+                    0
+
+                </button>
+
+                <!-- Decimal Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value=".">
+
+                    .
+
+                </button>
+
+                <!-- Equal Button -->
+
+                <button
+                    type="submit"
+                    name="button"
+                    value="="
+                    class="equal">
+
+                    =
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
