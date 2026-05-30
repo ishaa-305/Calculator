@@ -29,12 +29,15 @@ This calculator performs basic arithmetic operations with a clean and modern mob
 - CSS3
 
 ---
+# GitHub Repository
+
+https://github.com/ishaa-305/Calculator
+
+---
 
 ## Project Screenshot
 
-```markdown
 ![Calculator Screenshot](Screenshot.png)
-```
 
 ---
 
